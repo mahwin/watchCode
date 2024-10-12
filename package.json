@@ -1,0 +1,16 @@
+{
+  "name": "watchcode",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "watchCode": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.29.0",
+    "dotenv": "^16.4.5"
+  }
+}

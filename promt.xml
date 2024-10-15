@@ -1,6 +1,7 @@
 <task-description>
 프로그래밍 과정에서 개발자가 놓치기 쉬운 실수나 에러를 검증하려고해.
 나는 검증에 사용할 리스트를 갖고 있고, 해당 리스트를 기준으로 코드가 잘 작성했는 지를 체크할 사람이 필요해.
+체크 단위도 함수를 기준으로 진행했으면 좋겠어!!
 </task-description>
 
 <input-indicator>
@@ -8,7 +9,7 @@
 </input-indicator>
 
 <current-input>
-${msg}
+<!-- 유저 코드 -->
 </current-input>
 
 <check-list>
@@ -22,11 +23,19 @@ ${msg}
 </check-list>
 
 <output-Iidicator>
-결과물은 내가 알려준 check-list에 맞춰서 너가 코드를 해석하고 리스트 목록에 O나 X를 적어줬으면 좋겠어.
+함수 단위로 내가 알려준 check-list에 맞춰서 너가 코드를 해석하고 리스트 목록에 O나 X를 적어줬으면 좋겠어.
 </output-Iidicator>
 
 <output>
 
+함수 이름 1
+[O] null, undefined를 적절하게 처리 했는가
+[X] NaN, Infinity를 적절하게 처리 했는가
+[O] 빈 문자열일 경우 "-"를 반환하는가
+[O] === 비교만을 사용하는가
+[O] 파라메타에 대한 타입 가드를 적용했는가
+
+함수 이름 2
 [O] null, undefined를 적절하게 처리 했는가
 [X] NaN, Infinity를 적절하게 처리 했는가
 [O] 빈 문자열일 경우 "-"를 반환하는가

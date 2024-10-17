@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
-import { createPrompts } from "./utils/createPrompts.js";
+import { createPrompts } from "./promptModule/index.js";
 import clipboardy from "clipboardy";
 
 import { fileURLToPath } from "url";
@@ -21,7 +21,7 @@ const sendMsg = async (msg) => {
   });
 };
 
-const mainWithFile = async () => {
+const mainWithFile = async (version) => {
   const getArgument = () => process.argv[2];
   const getRootPath = () => path.dirname(fileURLToPath(import.meta.url));
   const getAbsolutePath = (filePath, relativePath) =>
@@ -50,11 +50,30 @@ const mainWithFile = async () => {
   console.log(response.content[0].text);
 };
 
-const mainWithClipboard = async () => {
+const mainWithClipboard = async (version) => {
   const clipboardContent = clipboardy.readSync();
-  const tromptMsg = createPrompts("version1", clipboardContent);
+
+  if (!clipboardContent && clipboardContent.length <= 10) {
+    console.warn("클립보드에 내용이 없습니다.");
+    return;
+  }
+
+  const tromptMsg = createPrompts(version, clipboardContent);
   const response = await sendMsg(tromptMsg);
   console.log(response.content[0].text);
 };
 
-mainWithClipboard();
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+(async function run() {
+  const versions = ["version0", "version1", "version2", "version3"];
+
+  for (const version of versions) {
+    console.log("--------------");
+    console.log(`${version} 검사 시작`);
+    mainWithClipboard(version);
+    await sleep(50000);
+  }
+})();

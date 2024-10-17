@@ -1,22 +1,13 @@
 import Anthropic from "@anthropic-ai/sdk";
 import dotenv from "dotenv";
+import { createPrompts } from "./utils/createPrompts.js";
+import clipboardy from "clipboardy";
+
 import { fileURLToPath } from "url";
-import { createPrompts } from "./utils/createPropmts";
 import path from "path";
 import fs from "fs";
 
 dotenv.config();
-
-const getArgument = () => process.argv[2];
-
-const getRootPath = () => path.dirname(fileURLToPath(import.meta.url));
-
-const getAbsolutePath = (filePath, relativePath) =>
-  path.resolve(filePath, relativePath);
-
-const getFile = (filePath) => fs.readFileSync(filePath, "utf8");
-
-const isFileExists = (filePath) => fs.existsSync(filePath);
 
 const sendMsg = async (msg) => {
   const anthropic = new Anthropic({
@@ -30,7 +21,14 @@ const sendMsg = async (msg) => {
   });
 };
 
-const main = async () => {
+const mainWithFile = async () => {
+  const getArgument = () => process.argv[2];
+  const getRootPath = () => path.dirname(fileURLToPath(import.meta.url));
+  const getAbsolutePath = (filePath, relativePath) =>
+    path.resolve(filePath, relativePath);
+  const getFile = (filePath) => fs.readFileSync(filePath, "utf8");
+  const isFileExists = (filePath) => fs.existsSync(filePath);
+
   const relativePath = getArgument();
 
   if (!relativePath) {
@@ -52,4 +50,11 @@ const main = async () => {
   console.log(response.content[0].text);
 };
 
-main();
+const mainWithClipboard = async () => {
+  const clipboardContent = clipboardy.readSync();
+  const tromptMsg = createPrompts("version1", clipboardContent);
+  const response = await sendMsg(tromptMsg);
+  console.log(response.content[0].text);
+};
+
+mainWithClipboard();

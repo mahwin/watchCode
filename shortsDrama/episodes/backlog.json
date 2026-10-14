@@ -8,7 +8,13 @@
     "villain": "부잣집 동창(사모님)",
     "twist": "가해자의 친어머니를 돌보는 사람이 피해자였다",
     "foreshadow": "미숙의 자랑 '우리 엄마는 햇살요양원에 계셔' → 정숙 멈칫 / 정숙 '오늘 어르신 생신이라 일찍 가야 해'",
-    "scores": {"anger": 5, "twist": 5, "foreshadow": 5, "clarity": 5, "fresh": 4},
+    "scores": {
+      "anger": 5,
+      "twist": 5,
+      "foreshadow": 5,
+      "clarity": 5,
+      "fresh": 4
+    },
     "total": 24,
     "status": "ep002 선정"
   },
@@ -21,7 +27,13 @@
     "villain": "신랑 어머니",
     "twist": "할머니는 신랑의 숨은 은인이었다",
     "foreshadow": "신랑이 식 전에 '꼭 오셔야 할 분이 있다'며 입구를 계속 확인",
-    "scores": {"anger": 5, "twist": 4, "foreshadow": 4, "clarity": 5, "fresh": 3},
+    "scores": {
+      "anger": 5,
+      "twist": 4,
+      "foreshadow": 4,
+      "clarity": 5,
+      "fresh": 3
+    },
     "total": 21,
     "status": "후보"
   },
@@ -34,7 +46,13 @@
     "villain": "지배인",
     "twist": "할아버지는 주방장의 은인이자 옛 스승",
     "foreshadow": "주방 벽에 걸린 낡은 보온병 사진",
-    "scores": {"anger": 4, "twist": 4, "foreshadow": 5, "clarity": 4, "fresh": 4},
+    "scores": {
+      "anger": 4,
+      "twist": 4,
+      "foreshadow": 5,
+      "clarity": 4,
+      "fresh": 4
+    },
     "total": 21,
     "status": "후보"
   },
@@ -47,9 +65,15 @@
     "villain": "장모",
     "twist": "무시당하던 사위만 장모의 병을 알고 있었다",
     "foreshadow": "사위가 장모의 약봉투를 슬쩍 보고 멈칫",
-    "scores": {"anger": 4, "twist": 4, "foreshadow": 4, "clarity": 4, "fresh": 4},
+    "scores": {
+      "anger": 4,
+      "twist": 4,
+      "foreshadow": 4,
+      "clarity": 4,
+      "fresh": 4
+    },
     "total": 20,
-    "status": "후보"
+    "status": "ep004 선정"
   },
   {
     "id": "B05",
@@ -60,7 +84,13 @@
     "villain": "은행 직원",
     "twist": "지점장이 할머니 장학금 1기생",
     "foreshadow": "지점장 책상 위의 낡은 장학증서",
-    "scores": {"anger": 4, "twist": 3, "foreshadow": 4, "clarity": 5, "fresh": 3},
+    "scores": {
+      "anger": 4,
+      "twist": 3,
+      "foreshadow": 4,
+      "clarity": 5,
+      "fresh": 3
+    },
     "total": 19,
     "status": "후보"
   },
@@ -73,7 +103,13 @@
     "villain": "사장 동창",
     "twist": "무시하던 친구가 생명의 은인",
     "foreshadow": "버스기사 친구의 등에 있는 화상 흉터",
-    "scores": {"anger": 4, "twist": 4, "foreshadow": 4, "clarity": 4, "fresh": 3},
+    "scores": {
+      "anger": 4,
+      "twist": 4,
+      "foreshadow": 4,
+      "clarity": 4,
+      "fresh": 3
+    },
     "total": 19,
     "status": "후보"
   },
@@ -86,7 +122,13 @@
     "villain": "입주민 대표",
     "twist": "노인은 이 아파트의 설계자",
     "foreshadow": "단지 입구 기념석의 이름",
-    "scores": {"anger": 4, "twist": 3, "foreshadow": 4, "clarity": 3, "fresh": 3},
+    "scores": {
+      "anger": 4,
+      "twist": 3,
+      "foreshadow": 4,
+      "clarity": 3,
+      "fresh": 3
+    },
     "total": 17,
     "status": "보류 (레퍼런스의 경비원·입주민 갑질물이 9.6만 회로 부진)"
   },
@@ -99,7 +141,13 @@
     "villain": "매니저",
     "twist": "창업 1호 직원",
     "foreshadow": "할머니의 오래된 사원증",
-    "scores": {"anger": 4, "twist": 3, "foreshadow": 3, "clarity": 5, "fresh": 2},
+    "scores": {
+      "anger": 4,
+      "twist": 3,
+      "foreshadow": 3,
+      "clarity": 5,
+      "fresh": 2
+    },
     "total": 17,
     "status": "보류 (회장 등장 구조가 레퍼런스와 너무 비슷함)"
   }

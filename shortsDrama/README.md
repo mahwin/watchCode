@@ -14,6 +14,7 @@ shortsDrama/
 │   ├── 04_shotlist.md        # 컷 분할과 컷별 이미지·영상 프롬프트 (MODE A/B)
 │   ├── 05_thumbnail_upload.md# 썸네일·제목·해시태그·업로드 체크리스트
 │   └── 06_qc_edit.md         # 검수·편집·렌더링 가이드
+├── bgm.md                    # 무료 배경음악 출처와 추천곡
 ├── examples/ep001_taxi.md    # 완성 예시 1편
 └── episodes/                 # 생성되는 에피소드 저장 위치
 ```

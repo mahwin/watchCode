@@ -42,7 +42,8 @@ Claude Code에 이렇게 말하면 됩니다.
 - [x] 오래 박사 표정·포즈 시트, 채널 아이콘
 - [x] 50대 남녀 주인공 시트
 - [x] 사슴 채도 보정 (B안)
-- [ ] 캐릭터 고해상도화·낱장 분리
+- [x] 캐릭터 낱장 분리 + 배경 제거 46장 → `assets/characters/cutouts/`
+- [ ] 캐릭터 고해상도화 (화면에 크게 쓸 컷부터)
 - [x] 채널명 확정: **후반전 잡학** → `docs/10_채널설정.md`
 - [ ] 유튜브 채널 개설 (핸들, 아이콘, 설명 입력)
 - [ ] TTS 서비스 선택 (유료 플랜 약관 확인)
@@ -57,4 +58,5 @@ python3 tools/yt.py video 7LSymhoLns8             # 설명란, 다시보기 구�
 python3 tools/demand_scan.py 계란 두부 토마토       # 주제 수요 측정
 python3 tools/duration.py episodes/001_커피/03_TTS원고.txt   # 대본 길이
 python3 tools/color_match.py 새그림.png                        # 오래 박사 색을 사람 캐릭터에 맞춤
+python3 tools/cutout.py                                        # 캐릭터 시트를 낱장 투명 PNG로 자르기
 ```
